@@ -1,0 +1,181 @@
+@font-face {
+    font-family: bankgothic;
+    src: url("assets\\fonts\\BNKGOTHM.TTF")
+  }
+  body {
+      background-image: url("assets\\imgs\\laffey3.jpg");
+      background-size: cover;
+      background-color: #43464b ;
+      
+  }
+  h1 {
+      text-align: center;
+      font-family: bankgothic, sans-serif;
+      font-size: 58px;
+      color:rgba(4,30,66,1);
+    }
+    .ribbon-rack {
+      width: 50%;
+      border-color: black;
+      border-width: 1px;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 auto;
+      padding: 0;
+    /*   grid-row-gap: px; */
+    }
+    .ribbon {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        max-width: 100%; 
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto; /* 15% from the top and centered */
+      padding: 0px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+      .modal-content .ribbon-name {
+        text-align: center;
+        font-family: bankgothic, sans-serif;
+        font-size: 4em;
+      }
+  
+      .modal-content .criteria {
+        text-align: left;
+        font-style: italic;
+        line-height: 1.5em;
+        font-size: 2em;
+      }
+      .modal-content .info {
+        text-indent: 3em;
+        font-size: 2em;
+        line-height: 1.3em;
+      }
+  .modal-header {
+  /*   display: block; */
+  /*   margin: 0; */
+    height: 300px;
+    width: 100%;
+    background-image: url("https://dummyimage.com/500x136/000/fff");
+    background-size: cover;
+    background-position: center;
+  }
+  /* Row 1 */
+  #pUC-modal .modal-header {
+    background-image: url("ribbons\\US-Navy-Pres-Unit-Citation.png")
+  }
+  #mertUnitCom-modal .modal-header {
+    background-image: url("ribbons\\Navy-Merit-Unit.png")
+  }
+  #navyE-modal .modal-header {
+      background-image: url("ribbons\\Battle-Effect-Award.png");
+  }
+  
+  /* Row 2 */
+  #americanCamp-modal .modal-header {
+    background-image: url("ribbons\\American-Campaign.png")
+  }
+  #euroAfroMiddle-modal .modal-header {
+    background-image: url("ribbons\\Euro-Afro-MidEast-Camp.png")
+  }
+  #asiaPacific-modal .modal-header {
+    background-image: url("ribbons\\Asia-Pacific-Campaign.png")
+  }
+  
+  /* Row 3 */
+  #ww2Vict-modal .modal-header {
+    background-image: url("ribbons\\wwii-victory.png")
+  }
+  #natDef-modal .modal-header {
+    background-image: url("ribbons\\Nat-Defense-Service.png")
+  }
+  #koreanServ-modal .modal-header {
+    background-image: url("ribbons\\Korean-Service.png")
+  }
+  
+  /* Row 4 */
+  #navalReserve-modal .modal-header {
+    background-image: url("ribbons\\naval-reserve.png")
+  }
+  #philiPres-modal .modal-header {
+    background-image: url("ribbons\\Phili-Pres-Unit-Citation.png")
+  }
+  #koreaPres-modal .modal-header {
+    background-image: url("ribbons\\Korea-Pres-Unit-Citation.png")
+  }
+  
+  /* Row 5 */
+  #philLiber-modal .modal-header {
+    background-image: url("ribbons\\Phil-Liber.png")
+  }
+  #philIndep-modal .modal-header {
+    background-image: url("ribbons\\Phil-Indep.png")
+  }
+  #unKorea-modal .modal-header {
+    background-image: url("ribbons\\UN-Service-Korea.png")
+  }
+  
+  /* Row 6 */
+  #koreaWar-modal .modal-header {
+    background-image: url("ribbons\\Rep-Korea-War.png")
+  }
+  #jubilee-modal .modal-header {
+    /* background-color: pink;  */
+    background-image: url("ribbons\\jubilee-liberty.png")
+  }
+  #chinaWar-modal .modal-header {
+    /* background-color: indianred; */
+    background-image: url("ribbons\\china-war-mem.png")
+  }
+  .modal-content h2 {
+    font-size: 3em;
+    font-family: sans-serif;
+    margin-top: 25px;
+    margin-bottom: 8px;
+  }
+  .modal-content p {
+    font-size: 1.5em;
+    margin: 8px 69px 8px 69px;
+    padding: 10px;
+  }
+    
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 64px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
