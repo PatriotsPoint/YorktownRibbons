@@ -3,7 +3,7 @@
     src: url("assets\\fonts\\BNKGOTHM.TTF")
   }
   body {
-      background-image: url("assets\\imgs\\laffey3.jpg");
+      background-image: url("assets\\YTbg.jpg");
       background-size: cover;
       background-color: #43464b ;
       
@@ -18,14 +18,79 @@
       width: 50%;
       border-color: black;
       border-width: 1px;
-      background: LightGray;
+      background:transparent;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: 
+      ". row1-1 row1-1 row1-2 row1-2 ."
+      "row2-1 row2-1 row2-2 row2-2 row2-3 row2-3"
+      "row3-1 row3-1 row3-2 row3-2 row3-3 row3-3"
+      "row4-1 row4-1 row4-2 row4-2 row4-3 row4-3"
+      "row5-1 row5-1 row5-2 row5-2 row5-3 row5-3"
+      "row6-1 row6-1 row6-2 row6-2 row6-3 row6-3";
       margin: 0 auto;
       padding: 0;
     /*   grid-row-gap: px; */
     }
+    .row1-1 {
+        grid-area: row1-1;
+    }
+    .row1-2 {
+        grid-area: row1-2;
+    }
+
+    .row2-1 {
+        grid-area: row2-1;
+    }
+    .row2-2 {
+        grid-area: row2-2;
+    }
+    .row2-3 {
+        grid-area: row2-3;
+    }
     
+    .row3-1 {
+        grid-area: row3-1;
+    }
+    .row3-2 {
+        grid-area: row3-2;
+    }
+    .row3-3 {
+        grid-area: row3-3;
+    }
+
+    .row4-1 {
+        grid-area: row4-1;
+    }
+    .row4-2 {
+        grid-area: row4-2;
+    }
+    .row4-3 {
+        grid-area: row4-3;
+    }
+
+    .row5-1 {
+        grid-area: row5-1;
+    }
+    .row5-2 {
+        grid-area: row5-2;
+    }
+    .row5-3 {
+        grid-area: row5-3;
+    }
+
+    .row6-1 {
+        grid-area: row6-1;
+    }
+    .row6-2 {
+        grid-area: row6-2;
+    }
+    .row6-3 {
+        grid-area: row6-3;
+    }
+
+
     .ribbon {
         width: 100%;
         height: 100%;
@@ -91,20 +156,19 @@
   #pUC-modal .modal-header {
     background-image: url("ribbons\\US-Navy-Pres-Unit-Citation.png")
   }
-  #mertUnitCom-modal .modal-header {
-    background-image: url("ribbons\\Navy-Merit-Unit.png")
+  #chinaService-modal .modal-header {
+    background-image: url("ribbons\\China_Service_Medal_ribbon.png")
   }
-  #navyE-modal .modal-header {
-      background-image: url("ribbons\\Battle-Effect-Award.png");
-  }
+
   
   /* Row 2 */
+  #navyMerit-modal .modal-header {
+    background-image: url("ribbons\\Navy-Merit-Unit.png")
+  }
   #americanCamp-modal .modal-header {
     background-image: url("ribbons\\American-Campaign.png")
   }
-  #euroAfroMiddle-modal .modal-header {
-    background-image: url("ribbons\\Euro-Afro-MidEast-Camp.png")
-  }
+
   #asiaPacific-modal .modal-header {
     background-image: url("ribbons\\Asia-Pacific-Campaign.png")
   }
@@ -113,46 +177,46 @@
   #ww2Vict-modal .modal-header {
     background-image: url("ribbons\\wwii-victory.png")
   }
+  #armyOccupation-modal .modal-header {
+    background-image: url("ribbons\\Army_of_Occupation_ribbon.png")
+  }
   #natDef-modal .modal-header {
     background-image: url("ribbons\\Nat-Defense-Service.png")
   }
+  
+  /* Row 4 */
   #koreanServ-modal .modal-header {
     background-image: url("ribbons\\Korean-Service.png")
   }
-  
-  /* Row 4 */
-  #navalReserve-modal .modal-header {
-    background-image: url("ribbons\\naval-reserve.png")
+  #armedForces-modal .modal-header {
+    background-image: url("ribbons\\armed-forces.png")
   }
-  #philiPres-modal .modal-header {
-    background-image: url("ribbons\\Phili-Pres-Unit-Citation.png")
-  }
-  #koreaPres-modal .modal-header {
-    background-image: url("ribbons\\Korea-Pres-Unit-Citation.png")
+  #vietnamService-modal .modal-header {
+    background-image: url("ribbons\\Vietnam-service-medal.png")
   }
   
   /* Row 5 */
+  #PhiliPresUnit-modal .modal-header {
+    background-image: url("ribbons\\Phili-Pres-Unit-Citation.png")
+  }
+  #vietnamGallantry-modal .modal-header {
+    background-image: url("ribbons\\Vietnam-gallantry-cross.png")
+  }
   #philLiber-modal .modal-header {
     background-image: url("ribbons\\Phil-Liber.png")
   }
-  #philIndep-modal .modal-header {
-    background-image: url("ribbons\\Phil-Indep.png")
-  }
+  
+  /* Row 6 */
   #unKorea-modal .modal-header {
     background-image: url("ribbons\\UN-Service-Korea.png")
   }
-  
-  /* Row 6 */
-  #koreaWar-modal .modal-header {
-    background-image: url("ribbons\\Rep-Korea-War.png")
-  }
-  #jubilee-modal .modal-header {
+  #vietnamCampMedal-modal .modal-header {
     /* background-color: pink;  */
-    background-image: url("ribbons\\jubilee-liberty.png")
+    background-image: url("ribbons\\Vietnam-Campaign-Medal.png")
   }
-  #chinaWar-modal .modal-header {
+  #repOfKoreaWar-modal .modal-header {
     /* background-color: indianred; */
-    background-image: url("ribbons\\china-war-mem.png")
+    background-image: url("ribbons\\Republic-of-Korea-War-Service.png")
   }
   .modal-content h2 {
     font-size: 3em;
